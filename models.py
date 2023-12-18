@@ -30,11 +30,11 @@ class Review(Base):
     def full_review(self):
         return f"Review for {self.restaurant.name} by {self.customer.full_name()}: {self.star_rating} stars."
 
-# # Configure the database connection
-# DATABASE_URL = "sqlite:///restaurant.db"  # Change this based on your database configuration
-# engine = create_engine(DATABASE_URL)
-# Base.metadata.create_all(engine)
+# Configure the database connection
+DATABASE_URL = "sqlite:///restaurant.db"  # Change this based on your database configuration
+engine = create_engine(DATABASE_URL)
+Base.metadata.create_all(engine)
 
-# # Create a session to interact with the database
-# Session = sessionmaker(bind=engine)
-# session = Session()
+# Create a session to interact with the database
+Session = sessionmaker(bind=engine)
+session = Session()
