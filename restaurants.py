@@ -1,12 +1,12 @@
 from models import Restaurant, Customer, Review, session
 
-# # Clear existing data from the tables
-# session.query(Review).delete()
-# session.query(Customer).delete()
-# session.query(Restaurant).delete()
-# session.commit()
+# Clear existing data from the tables
+session.query(Review).delete()
+session.query(Customer).delete()
+session.query(Restaurant).delete()
+session.commit()
 
-# # Add restaurants
+# Add restaurants
 # restaurant1 = Restaurant(name='Choma Zone', price=3)
 # restaurant2 = Restaurant(name='Pasta Palace', price=4)
 # restaurant3 = Restaurant(name='Sushi Haven', price=5)
