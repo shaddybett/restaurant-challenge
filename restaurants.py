@@ -1,4 +1,4 @@
-# from models import Restaurant, Customer, Review, session
+from models import Restaurant, Customer, Review, session
 
 # # Clear existing data from the tables
 # session.query(Review).delete()
