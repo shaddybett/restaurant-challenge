@@ -31,7 +31,7 @@ class Review(Base):
         return f"Review for {self.restaurant.name} by {self.customer.full_name()}: {self.star_rating} stars."
 
 # Configure the database connection
-DATABASE_URL = "sqlite:///restaurant.db"  # Change this based on your database configuration
+DATABASE_URL = "sqlite:///restaurant.db"
 engine = create_engine(DATABASE_URL)
 Base.metadata.create_all(engine)
 
